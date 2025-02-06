@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: darkblue;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInBounce 1s ease-in-out;
+}
+
+header:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Search Section */
+.search-section {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-section:hover {
+    transform: scale(1.02);
+}
+
+/* Form Elements */
+.search-section select,
+.search-section button {
+    padding: 12px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    width: 180px;
+    font-size: 16px;
+}
+
+.search-section select {
+    background: #fff;
+    color: #000;
+}
+
+.search-section button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Bus Results Section */
+.bus-results {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.bus-info {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* 🔹 Mobile-Friendly Adjustments (ONLY for screens smaller than 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .search-section {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    /* Make dropdowns and button full-width for better usability */
+    .search-section select,
+    .search-section button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-section {
+        padding: 10px;
+    }
+
+    .search-section select,
+    .search-section button {
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+}

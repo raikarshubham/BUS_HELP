@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Help</h1>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Find a Bus</h2>
+            
+            <label for="from-location">From:</label>
+            <select id="from-location">
+                
+                <option value="nitte">Nitte</option>
+                
+            </select>
+
+            <label for="to-location">To:</label>
+            <select id="to-location">
+                <option value="">Select Destination</option>
+                <option value="mangalore">Mangalore</option>
+                <option value="udupi">Udupi</option>
+                <option value="karkala">Karkala</option>
+                <option value="padubidri">Padubidri</option>
+            </select>
+
+            <button onclick="searchBus()">Search</button>
+        </section>
+
+        <section id="results" class="bus-results">
+            <h3>Available Buses</h3>
+            <div id="bus-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
